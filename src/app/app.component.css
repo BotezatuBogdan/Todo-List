@@ -1,0 +1,119 @@
+
+.container {
+    margin: .5rem;
+    width: 100%;
+    width: 600px;
+    min-height: 600px;
+    max-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+  }
+
+.head, .add-list-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.title {
+    font-size: 25px !important;
+}
+
+.white-text {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.spacer {
+    flex: 1 0;
+}
+
+.add-list-element {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.add-list-input {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: 0;
+    font-size: 20px;
+}
+
+.add-button {
+    height: 54.49px;
+    width: 10%;
+    border-radius: 0 1rem 1rem 0;
+    border: 0;
+    background-color: white;
+}
+
+.task-form {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    margin-top: .5rem;
+    
+}
+
+.task {
+    margin: .5rem 0 .5rem 0;
+    font-size: 14px;
+    width: 95%;
+}
+
+.completed-task {
+    background-color: #ffd740;
+}
+
+.no-task-message {
+    padding: 1rem;
+}
+
+.task-delete-button {
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.incomplete-tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed-list {
+    margin-top: 1rem;
+}
+
+.task-delete-button:hover {
+    color: red;
+    transition: all .5s ease;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 300px;
+    }
+
+    .task{
+        width: 90%;
+    }
+}
